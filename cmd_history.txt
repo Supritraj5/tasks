@@ -1,0 +1,140 @@
+1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  cd
+   44  sudo apt update -y
+   45  sudo apt install mysql-server
+   46  sudo systemctl status mysql.service 
+   47  sudo mysql
+   48  sudo mysql_secure_installation
+   49  sudo mysql
+   50  sudo mysql_secure_installation
+   51  sudo mysql -u root -p
+   52  sudo snap install mysql-workbench-community
+   53  man
+   54  man man
+   55  ls
+   56  cd
+   57  man cd
+   58  man mkdir
+   59  pwd
+60  ls
+   61  cd ~
+   62  ls
+   63  cd Desktop/
+   64  mkdir F1
+   65  touch file1
+   66  touch file2
+   67  ls
+   68  cd F1
+   69  touch file1
+   70  touch file2
+   71  lsssssss
+   72  ls
+   73  echo "contents of file 1" >> file1
+   74  echo "contents of file 2" >> file2
+   75  cat file1
+   76  cat file2
+   77  cd ~
+   78  ls
+   79  cd Downloads/
+   80  cd ~/Desktop
+   81  cp F1 ~/Downloads/
+   82  cp -r F1 ~/Downloads/
+   83  su
+84  pwd
+   85  cd F!
+   86  cd F1
+   87  ls
+   88  open .
+   89  ln file1 file2
+   90  ln file1 lnkfile
+   91  cat lnkfile 
+   92  cat lnkfile
+   93  echo "some more contents" >> lnkfile
+   94  cat lnkfile
+   95  cat file1
+   96  cd ~
+   97  cd Downloads/
+   98  ls
+   99  gzip -c tutorial.pdf > tutorial.gz
+  100  open .
+  101  history
+  102  echo "hello linux"
+  103  chomod --x
+  104  ping wwww.google.com
+  105  ping 8.8.8.8
+  106  history
+  107  sudo useradd suprit
+  108  sudo useradd -m -s /bin/bash suprit
+  109  sudo apt-get update
+  110  apt-get update
+  111  apt-get upgrade
+  112  sudo apt-get update
+  113  sudo apt-get upgrade
+  114  man 1 grep 
+  115  man 7 grep 
+  116  whatis grep
+117  help grep
+  118  help ls
+  119  man -k ls
+  120  man -k grep
+  121  info grep
+  122  man 7 grep
+  123  man 3 grep
+  124  info grep
+  125  cd ..
+  126  ls
+195  cd .ssh
+  196  ssh-keygen -t rsa -b 4096 -C "supritraj005@gmail.com"
+  197  cat id_rsa.pub
+  198  cd !
+  199  cd ~
+  200  cd /home/rps/
+  201  cd Downloads/
+  202  cd F1/project/
+  203  git init
+  204  git add .
+  205  git remote add origin git@github.com:Supritraj5/tasks.git
+  206  git commit -m "fresh commit"
+  207  git push origin master
+  208  history
